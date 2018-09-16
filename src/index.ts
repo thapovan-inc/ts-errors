@@ -73,6 +73,10 @@ class GenericError extends Error {
         super(message);
         this.cause = cause;
     }
+
+    public toJSON(): object {
+        return {message: this.message, cause: this.cause ? this.cause.message : "unknown"};
+    }
 }
 
 function isGenericError(err: any): err is GenericError {
