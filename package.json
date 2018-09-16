@@ -1,0 +1,15 @@
+{
+  "name": "@thapovan-inc/errors",
+  "version": "1.0.0",
+  "description": "Definition for general errors",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "nyc mocha --require ts-node/register --require source-map-support/register src/**/*.spec.ts"
+  },
+  "keywords": [
+    "errors",
+    "typescript"
+  ],
+  "author": "Sriram Damodharan",
+  "license": "SEE LICENSE IN LICENSE.md"
+}
